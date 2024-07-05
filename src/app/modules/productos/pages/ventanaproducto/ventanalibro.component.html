@@ -1,0 +1,62 @@
+<form [formGroup]="formGroup" (ngSubmit)="saveAndClose()" class="dialog-container">
+  <div class="form-header">
+    <label for="cabecera">REGISTRAR PRODUCTO</label>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="nombreProducto">Nombre del Producto:</label>
+      <input type="text" id="nombreProducto" name="nombreProducto" formControlName="nombreProducto" required>
+    </div>
+
+    <div class="form-group">
+      <label for="tipo">Tipo:</label>
+      <select id="tipo" name="tipo" formControlName="tipo" required>
+        <option *ngFor="let tipo of tiposlist" [value]="tipo.nombreTipo">{{ tipo.nombreTipo }}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="categoria">Categoría:</label>
+      <select id="categoria" name="categoria" formControlName="categoria" required>
+        <option *ngFor="let categoria of categoriaslist" [value]="categoria.nombreCategoria">{{ categoria.nombreCategoria }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="ubicacion">Ubicación:</label>
+      <select id="ubicacion" name="ubicacion" formControlName="ubicacion" required>
+        <option *ngFor="let ubicacion of ubicacioneslist" [value]="ubicacion.nombreUbicacion">{{ ubicacion.nombreUbicacion }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="stock">Stock:</label>
+      <input type="number" id="stock" name="stock" formControlName="stock" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="precioCompra">Precio de Compra:</label>
+      <input type="number" id="precioCompra" name="precioCompra" formControlName="precioCompra" required>
+    </div>
+
+    <div class="form-group">
+      <label for="precioVenta">Precio de Venta:</label>
+      <input type="number" id="precioVenta" name="precioVenta" formControlName="precioVenta" required>
+    </div>
+
+    <div class="form-group">
+      <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+      <input type="date" id="fechaVencimiento" name="fechaVencimiento" formControlName="fechaVencimiento" required>
+    </div>
+  </div>
+
+  <div class="button-group" mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit" class="register-button">Guardar</button>
+    <button mat-raised-button color="warn" type="button" (click)="onNoClick()" class="cancel-button">Cancelar</button>
+  </div>
+</form>

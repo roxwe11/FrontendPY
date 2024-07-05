@@ -1,0 +1,34 @@
+<body>
+  <div class="container">
+      <h1>Ubicaciones</h1>
+      <button mat-raised-button (click)="openDialog()" class="new-button">Nueva Ubicación</button>
+      <div class="search-bar">
+          <input type="text" placeholder="Buscar...">
+      </div>
+      <table>
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Acciones</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let ubicacion of ubicacionesList">
+                  <td>{{ ubicacion.idUbicacion }}</td>
+                  <td>{{ ubicacion.nombreUbicacion }}</td>        
+                  <td>
+                      <div class="icon-buttons">
+                          <button (click)="editItem(ubicacion)">
+                              <i class="fas fa-pencil-alt"></i>
+                          </button>
+                          <button (click)="deleteItem(ubicacion)">
+                              <i class="fas fa-trash-alt"></i>
+                          </button>
+                      </div>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</body>

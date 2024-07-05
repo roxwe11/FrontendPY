@@ -1,0 +1,26 @@
+<body>
+    <div class="contenedor">
+        <header>
+            <h1 style="color: #A4D2C0; text-shadow: 3px 2px 14px rgba(164, 210, 192, 0.5); font-family: 'Arial', sans-serif; font-size: 3em;">BIENVENIDOS </h1>
+        </header>
+           
+        <div class="alerta">
+            <div class="alerta-caja">
+                <h3>ALERTA!</h3>
+                <p>POCAS UNIDADES DE ACETAMINOFEN EN INVENTARIO</p>
+                <button onclick="cerrarAlerta(this)">CERRAR</button>
+            </div>
+            <div class="alerta-caja">
+                <h3>ALERTA!</h3>
+                <p>PRÓXIMOS MEDICAMENTOS A VENCER: ACETAMINOFEN IBUPROFENO</p>
+                <button onclick="cerrarAlerta(this)">CERRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function cerrarAlerta(element) {
+            element.parentElement.style.display = 'none';
+        }
+    </script>
+</body>

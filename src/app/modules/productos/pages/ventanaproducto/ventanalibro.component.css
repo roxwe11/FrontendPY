@@ -1,0 +1,79 @@
+.dialog-container {
+  background-color: #f0f0f0; /* Color de fondo */
+  border: 8px solid #85B5A6; /* Color del borde */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  width: 800px; /* Ancho del formulario */
+  height: 500px; /* Altura del formulario */
+  margin: 0 auto; /* Centrando el formulario */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Estilo del encabezado del formulario */
+.form-header {
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.form-header label {
+  color: #85B5A6; /* Color del texto */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold; /* Peso del texto */
+}
+
+/* Estilo de las filas de formulario */
+.dialog-container .form-row {
+  display: flex;
+  justify-content: space-between; /* Distribuir el espacio entre los grupos */
+  margin-bottom: 15px; /* Espaciado inferior entre las filas */
+}
+
+/* Estilo de los grupos de formulario */
+.dialog-container .form-group {
+  display: flex;
+  flex-direction: column; /* Dirección del contenido del grupo */
+  width: 32%; /* Ancho de los grupos */
+}
+
+/* Estilo de los campos de entrada y selectores */
+.dialog-container input[type="text"],
+.dialog-container input[type="number"],
+.dialog-container input[type="date"],
+.dialog-container select {
+  width: 100%; /* Ancho del campo de entrada */
+  padding: 10px; /* Espaciado interno */
+  margin: 5px 0; /* Espaciado superior e inferior */
+  border: 1px solid #d3d3d3; /* Borde del campo de entrada */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño del texto */
+  box-sizing: border-box; /* Incluyendo el padding en el ancho */
+}
+
+/* Estilo del grupo de botones */
+.dialog-container .button-group {
+  display: flex;
+  justify-content: space-between; /* Distribuir el espacio entre los botones */
+}
+
+/* Estilo de los botones */
+.dialog-container button {
+  width: calc(50% - 10px); /* Ancho del botón */
+  padding: 10px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño del texto */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+/* Estilo del botón "Registrar" */
+.dialog-container .register-button {
+  background-color: #85B5A6; /* Color de fondo */
+  color: #fff; /* Color del texto */
+}
+
+/* Estilo del botón "Cancelar" */
+.dialog-container .cancel-button {
+  background-color: #85B5A6; /* Color de fondo */
+  color: #fff; /* Color del texto */
+}

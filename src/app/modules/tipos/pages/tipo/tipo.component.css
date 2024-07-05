@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  /* Botón "Nueva Ubicación" */
+  .new-button {
+    background-color: #A4D2C0; /* Color de fondo similar al verde claro */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .new-button:hover {
+    background-color: #92C4AF; /* Cambio de color en el hover */
+  }
+  
+  /* Tabla de Ubicaciones */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  th {
+    background-color: #A4D2C0; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd; /* Línea de separación de las filas */
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el ratón por encima */
+  }
+  
+  .icon-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .icon-buttons i {
+    color: #666; /* Color de los iconos */
+  }
+  
+  .icon-buttons button:hover i {
+    color: #333; /* Cambio de color de los iconos en el hover */
+  }
+  
+  /* Barra de búsqueda */
+  .search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  /* Título de la sección */
+  h1 {
+    color: #85B5A6; /* Color del texto del título */
+    text-transform: uppercase;
+    font-size: 25px;
+  
+  }
+  
+  /* Contenedor principal */
+  .container {
+    margin: 20px;
+  }
+  

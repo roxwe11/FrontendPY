@@ -1,0 +1,46 @@
+<li>
+  <button mat-raised-button (click)="openDialog()" class="new-button">NUEVO PRODUCTO</button>
+</li>
+<div class="search-bar">
+  <input type="text" placeholder="Buscar...">
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Nombre</th>
+      <th>Tipo</th>
+      <th>Categoria</th>
+      <th>Ubicacion</th>
+      <th>Stock</th>
+      <th>Precio Compra</th>
+      <th>Precio Venta</th>
+      <th>Fecha de Vencimiento</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productosList">
+      <td>{{ producto.idProducto }}</td>
+      <td>{{ producto.nombreProducto }}</td>
+      <td>{{ producto.tipo?.nombreTipo }}</td>
+      <td>{{ producto.categoria?.nombreCategoria }}</td>
+      <td>{{ producto.ubicacion?.nombreUbicacion }}</td>
+      <td>{{ producto.stock }}</td>
+      <td>{{ producto.precioCompra }}</td>
+      <td>{{ producto.precioVenta }}</td>
+      <td>{{ producto.fechaVencimiento ? (producto.fechaVencimiento | date:'dd/MM/yyyy') : 'N/A' }}</td>
+      <td>
+        <div class="icon-buttons">
+          <button (click)="editItem(producto)">
+            <i class="fas fa-pencil-alt"></i>
+          </button>
+          <button (click)="deleteItem(producto)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

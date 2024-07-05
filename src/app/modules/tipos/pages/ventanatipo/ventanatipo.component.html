@@ -1,0 +1,17 @@
+<form [formGroup]="formGroup" (ngSubmit)="send()">
+  <div>
+    <label for="cabecera">REGISTRAR NUEVO TIPO</label>
+  </div>
+  <div>
+    <label for="nombreTipo">Ingrese nombre:</label>
+    <input type="text" id="nombreTipo" name="nombreTipo" formControlName="nombreTipo" placeholder="Nombre...">
+  </div>
+  <div>
+    <label for="detalleTipo">Descripcion:</label>
+    <input type="text" id="detalleTipo" name="detalleTipo" formControlName="detalleTipo" placeholder="Descripcion...">
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit">Registrar</button>
+    <button mat-raised-button color="warn" type="button" (click)="onNoClick()">Cancelar</button>
+  </div>
+</form>

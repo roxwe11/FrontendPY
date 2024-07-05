@@ -1,0 +1,30 @@
+header {
+    width: 100%;
+    height: 70px;
+    background: #A4D2C0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    padding: 10 20px; /* Añade un padding para que el contenido no esté pegado a los bordes */
+    margin-left: -30px;
+}
+
+.icon__menu i {
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(255, 255, 255); /* Cambia el color del icono a blanco */
+    top: 0;
+    z-index: 200;
+    padding: 10 20px; /* Añade un padding para que el contenido no esté pegado a los bordes */
+    margin-left: 30px;
+}
+
+.icon__menu p {
+    margin: 3; /* Elimina los márgenes por defecto */
+    color: white; /* Asegúrate de que el texto sea blanco para mayor contraste */
+
+}
+

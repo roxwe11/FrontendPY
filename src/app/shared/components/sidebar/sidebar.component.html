@@ -1,0 +1,74 @@
+<nav class="menu__side">
+  <ul class="options__menu">
+    <li class="custom-option">
+
+      <a class="option" [routerLink]="['/home/usuarios']">
+        <i class="fas fa-user" title="Usuario"></i>
+      </a>
+      
+    </li>
+    
+    <li>
+      <a class="option" [routerLink]="['/home/welcome']">
+        <i class="fas fa-home" title="Inicio"></i>
+        <h4>INICIO</h4>
+      </a>
+    </li>
+
+    <li>
+      <a class="option" [routerLink]="['/home/convenio']">
+        <i class="fas fa-box" title="Producto"></i>
+        <h4>PRODUCTO</h4>
+      </a>
+    </li>
+
+    <li>
+      <a class="option" [routerLink]="['/home/ventas']">
+        <i class="fas fa-shopping-cart" title="Ventas"></i>
+        <h4>VENTAS</h4>
+      </a>
+    </li>
+
+    <li>
+      <a class="option" [routerLink]="['/home/stock']">
+        <i class="fas fa-warehouse" title="Stock"></i>
+        <h4>STOCK</h4>
+      </a>
+    </li>
+
+    <!-- 
+      <li>
+      <a class="option" [routerLink]="['/home/reportes']">
+        <i class="fas fa-chart-line" title="Reportes"></i>
+        <h4>REPORTES</h4>
+      </a>
+    </li>
+    -->
+
+
+    <li>
+      <a class="option" [routerLink]="['/home/configuracion']">
+        <i class="fas fa-cog" title="Configuración"></i>
+        <h4>CONFIGURACION</h4>
+      </a>
+
+      <ul class="sub-options__menu" *ngIf="isSubmenuVisible">
+       
+        <!--
+        <li>
+          <a class="sub-option" [routerLink]="['/home/listarproyecto']">
+            <i class="" title="Estado"></i>
+            <h4>Perfil</h4>
+          </a>
+        </li>
+        <li>
+          <a class="sub-option" [routerLink]="['/home/proyecto/opcion2']">
+            <i class="" title="Opción 2"></i>
+            <h4>Asignacion</h4>
+          </a>
+        </li>
+        -->
+      </ul>
+    </li>
+  </ul>
+</nav>

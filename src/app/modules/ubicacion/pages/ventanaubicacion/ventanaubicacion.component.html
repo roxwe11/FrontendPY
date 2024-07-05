@@ -1,0 +1,13 @@
+<form [formGroup]="formGroup" (ngSubmit)="send()">
+  <div>
+    <label for="cabecera">REGISTRAR NUEVA UBICACIÓN</label>
+  </div>
+  <div>
+    <label for="nombreUbicacion">Ingrese nombre:</label>
+    <input type="text" id="nombreUbicacion" name="nombreUbicacion" formControlName="nombreUbicacion" placeholder="Nombre...">
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit">Registrar</button>
+    <button mat-raised-button color="warn" type="button" (click)="onNoClick()">Cancelar</button>
+  </div>
+</form>

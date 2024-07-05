@@ -1,0 +1,23 @@
+<section class="container-login">
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form [formGroup]="formLogin" (ngSubmit)="sendUser()">
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fas fa-cross"></i></a> <!-- Ícono de cruz para botica -->
+                </div>
+    
+                <input type="text" placeholder="Usuario" formControlName="user">
+                <input type="password" placeholder="Contraseña" formControlName="password">
+    
+                <select id="user-role" name="user-role">
+                    <option value="admin">Administrador</option>
+                    <option value="vendedor">Vendedor</option>
+                </select>
+    
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+        </div>
+    </div>
+</section>
